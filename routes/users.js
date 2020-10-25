@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('config');
+//const config = require('config');
 const _ = require('lodash'); //!used to select data from json
 const {User,validate} = require('../models/user');
 const bcrypt = require('bcrypt'); //!used for password hashing
