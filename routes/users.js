@@ -1,13 +1,16 @@
-const jwt = require('jsonwebtoken');
+//const jwt = require('jsonwebtoken');
 //const config = require('config');
+const auth = require('../middleware/auth2');
 const _ = require('lodash'); //!used to select data from json
 const {User,validate} = require('../models/user');
 const bcrypt = require('bcrypt'); //!used for password hashing
 const express = require('express');
 const router = express();
 
-router.get('/',async(req,res)=>{
-    res.send('works');
+router.get('/:me',auth,async(req,res)=>{
+    const user = await User.findById(req.user._id).select('-password -__v _id');
+    console.log(user);
+    res.send(user); 
 });
 
 router.post('/', async (req,res) => {
