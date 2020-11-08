@@ -1,15 +1,17 @@
+const asyncMiddleware = require('../middleware/async');
 const auth = require('../middleware/auth2');
 const {Genre,validate} = require('../models/genre');
 const express = require('express');
 const admin = require('../middleware/admin');
+const { error } = require('winston');
 const router = express();
 
-router.get('/', async (req, res) => {
+router.get('/',async (req,res)=>{
     const genres = await Genre.find().sort('name');
     res.send(genres);
 });
-  
-router.post('/',auth, async (req, res) => {
+//!                   asyncMiddleware used one for practice
+router.post('/',auth, asyncMiddleware (async (req, res) => {
     
     const { error } = validate(req.body); 
     if (error) return res.status(400).send(error.details[0].message);
@@ -19,7 +21,7 @@ router.post('/',auth, async (req, res) => {
     });
     await genre.save();
     res.send(genre);
-});
+}));
   
 router.put('/:id', async (req, res) => {
     const { error } = validate(req.body); 
@@ -34,6 +36,7 @@ router.put('/:id', async (req, res) => {
     res.send(genre);
 });
   
+///*                auth and admin for isAdmin authentication
 router.delete('/:id',[auth,admin], async (req, res) => {
     const genre = await Genre.findByIdAndRemove(req.params.id).catch(function(){
         return res.status(404).send('The genre with the given ID was not found.');

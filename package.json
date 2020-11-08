@@ -4,22 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.18.4"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
     "config": "^3.3.2",
     "express": "^4.16.2",
+    "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "helmet": "^4.2.0",
     "joi": "^13.7.0",
     "joi-objectid": "^3.0.1",
     "jshint": "^2.12.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",
     "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }

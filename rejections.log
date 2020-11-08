@@ -1,0 +1,134 @@
+{
+  error: ReferenceError: logger is not defined
+      at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:6:23
+      at tryCatcher (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/util.js:16:23)
+      at Promise._settlePromiseFromHandler (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:512:31)
+      at Promise._settlePromise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:569:18)
+      at Promise._settlePromiseCtx (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:606:10)
+      at Async._drainQueue (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:138:12)
+      at Async._drainQueues (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:143:10)
+      at Immediate.Async.drainQueues [as _onImmediate] (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:17:14)
+      at processImmediate (internal/timers.js:456:21),
+  level: 'error',
+  message: 'unhandledRejection: logger is not defined\n' +
+    'ReferenceError: logger is not defined\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:6:23\n' +
+    '    at tryCatcher (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/util.js:16:23)\n' +
+    '    at Promise._settlePromiseFromHandler (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:512:31)\n' +
+    '    at Promise._settlePromise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:569:18)\n' +
+    '    at Promise._settlePromiseCtx (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:606:10)\n' +
+    '    at Async._drainQueue (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:138:12)\n' +
+    '    at Async._drainQueues (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:143:10)\n' +
+    '    at Immediate.Async.drainQueues [as _onImmediate] (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:17:14)\n' +
+    '    at processImmediate (internal/timers.js:456:21)',
+  stack: 'ReferenceError: logger is not defined\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:6:23\n' +
+    '    at tryCatcher (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/util.js:16:23)\n' +
+    '    at Promise._settlePromiseFromHandler (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:512:31)\n' +
+    '    at Promise._settlePromise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:569:18)\n' +
+    '    at Promise._settlePromiseCtx (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:606:10)\n' +
+    '    at Async._drainQueue (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:138:12)\n' +
+    '    at Async._drainQueues (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:143:10)\n' +
+    '    at Immediate.Async.drainQueues [as _onImmediate] (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js:17:14)\n' +
+    '    at processImmediate (internal/timers.js:456:21)',
+  exception: true,
+  date: 'Sat Oct 31 2020 13:27:03 GMT-0400 (Eastern Daylight Time)',
+  process: {
+    pid: 15407,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v12.18.4',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 67186688,
+      heapTotal: 56205312,
+      heapUsed: 25194824,
+      external: 19753430,
+      arrayBuffers: 18295998
+    }
+  },
+  os: {
+    loadavg: [ 2.81005859375, 2.091796875, 1.92578125 ],
+    uptime: 1274874
+  },
+  trace: [
+    {
+      column: 23,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/util.js',
+      function: 'tryCatcher',
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 31,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'Promise._settlePromiseFromHandler',
+      line: 512,
+      method: '_settlePromiseFromHandler',
+      native: false
+    },
+    {
+      column: 18,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'Promise._settlePromise',
+      line: 569,
+      method: '_settlePromise',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'Promise._settlePromiseCtx',
+      line: 606,
+      method: '_settlePromiseCtx',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js',
+      function: 'Async._drainQueue',
+      line: 138,
+      method: '_drainQueue',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js',
+      function: 'Async._drainQueues',
+      line: 143,
+      method: '_drainQueues',
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/async.js',
+      function: 'Immediate.Async.drainQueues [as _onImmediate]',
+      line: 17,
+      method: 'drainQueues [as _onImmediate]',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'internal/timers.js',
+      function: 'processImmediate',
+      line: 456,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2020-10-31T17:27:03.674Z'
+}
