@@ -132,3 +132,422 @@
   ],
   timestamp: '2020-10-31T17:27:03.674Z'
 }
+{
+  error: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
+      at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)
+      at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10
+      at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5
+      at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)
+      at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)
+      at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)
+      at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)
+      at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)
+      at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)
+      at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+      at internal/main/run_main_module.js:17:47,
+  level: 'error',
+  message: "unhandledRejection: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    "MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    '    at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5\n' +
+    '    at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)\n' +
+    '    at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)\n' +
+    '    at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)\n' +
+    '    at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  stack: "MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    '    at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5\n' +
+    '    at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)\n' +
+    '    at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)\n' +
+    '    at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)\n' +
+    '    at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  exception: true,
+  date: 'Wed Nov 11 2020 14:40:24 GMT-0500 (Eastern Standard Time)',
+  process: {
+    pid: 93946,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v12.18.4',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 66433024,
+      heapTotal: 55681024,
+      heapUsed: 25995344,
+      external: 19757168,
+      arrayBuffers: 18313624
+    }
+  },
+  os: {
+    loadavg: [ 1.9306640625, 2.0927734375, 1.97412109375 ],
+    uptime: 500607
+  },
+  trace: [
+    {
+      column: 13,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.Connection.openUri',
+      line: 664,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js',
+      function: null,
+      line: 342,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js',
+      function: null,
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js',
+      function: 'Promise._execute',
+      line: 300,
+      method: '_execute',
+      native: false
+    },
+    {
+      column: 18,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'Promise._resolveFromExecutor',
+      line: 483,
+      method: '_resolveFromExecutor',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'new Promise',
+      line: 79,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 30,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js',
+      function: 'Mongoose.connect',
+      line: 341,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js',
+      function: 'module.exports',
+      line: 5,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'internal/modules/run_main.js',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 71,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'internal/main/run_main_module.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2020-11-11T19:40:24.897Z'
+}
+{
+  error: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
+      at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)
+      at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10
+      at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5
+      at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)
+      at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)
+      at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)
+      at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)
+      at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)
+      at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)
+      at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+      at internal/main/run_main_module.js:17:47,
+  level: 'error',
+  message: "unhandledRejection: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    "MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    '    at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5\n' +
+    '    at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)\n' +
+    '    at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)\n' +
+    '    at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)\n' +
+    '    at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  stack: "MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n" +
+    '    at NativeConnection.Connection.openUri (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js:664:13)\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:342:10\n' +
+    '    at /Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5\n' +
+    '    at Promise._execute (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at promiseOrCallback (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)\n' +
+    '    at Mongoose.connect (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js:341:10)\n' +
+    '    at module.exports (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js:5:14)\n' +
+    '    at Object.<anonymous> (/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js:8:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  exception: true,
+  date: 'Wed Nov 11 2020 14:43:25 GMT-0500 (Eastern Standard Time)',
+  process: {
+    pid: 94079,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v12.18.4',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 66695168,
+      heapTotal: 55681024,
+      heapUsed: 25963216,
+      external: 19765360,
+      arrayBuffers: 18321816
+    }
+  },
+  os: { loadavg: [ 1.52197265625, 1.859375, 1.89453125 ], uptime: 500788 },
+  trace: [
+    {
+      column: 13,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.Connection.openUri',
+      line: 664,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js',
+      function: null,
+      line: 342,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js',
+      function: null,
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/debuggability.js',
+      function: 'Promise._execute',
+      line: 300,
+      method: '_execute',
+      native: false
+    },
+    {
+      column: 18,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'Promise._resolveFromExecutor',
+      line: 483,
+      method: '_resolveFromExecutor',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/bluebird/js/release/promise.js',
+      function: 'new Promise',
+      line: 79,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/helpers/promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 30,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/node_modules/mongoose/lib/index.js',
+      function: 'Mongoose.connect',
+      line: 341,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/startup/db.js',
+      function: 'module.exports',
+      line: 5,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 24,
+      file: '/Users/farhan/Desktop/nodejs/videos/4.14- Project- Genres Endpoint 2/vidly/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'internal/modules/run_main.js',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 71,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'internal/main/run_main_module.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2020-11-11T19:43:25.452Z'
+}

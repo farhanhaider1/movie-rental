@@ -126,3 +126,15 @@
 {"message":"connecting database","level":"info"}
 {"message":"Listening on port 3000...","level":"info"}
 {"message":"connecting database","level":"info"}
+{
+  level: 'info',
+  message: 'WE GOT AN unHANDLED EXCEPTION',
+  timestamp: '2020-11-11T19:40:24.900Z'
+}
+{"message":"Listening on port 3000...","level":"info"}
+{
+  level: 'info',
+  message: 'WE GOT AN unHANDLED EXCEPTION',
+  timestamp: '2020-11-11T19:43:25.455Z'
+}
+{"message":"Listening on port 3000...","level":"info"}
