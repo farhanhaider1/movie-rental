@@ -138,3 +138,25 @@
   timestamp: '2020-11-11T19:43:25.455Z'
 }
 {"message":"Listening on port 3000...","level":"info"}
+{
+  level: 'info',
+  message: 'WE GOT AN unHANDLED EXCEPTION',
+  timestamp: '2020-11-11T19:48:53.375Z'
+}
+{"message":"Listening on port 3000...","level":"info"}
+{
+  level: 'info',
+  message: "WE GOT AN unHANDLED EXCEPTIONMongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections",
+  timestamp: '2020-11-11T19:49:12.216Z'
+}
+{"message":"Listening on port 3000...","level":"info"}
+{
+  level: 'info',
+  message: "WE GOT AN unHANDLED EXCEPTIONMongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections",
+  timestamp: '2020-11-11T19:52:12.964Z'
+}
+{"message":"Listening on port 3000...","level":"info"}
+{"message":"Listening on port 3000...","level":"info"}
+{"message":"connecting database","level":"info"}
+{"message":"Listening on port 3000...","level":"info"}
+{"message":"connecting database","level":"info"}

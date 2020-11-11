@@ -28,7 +28,7 @@ module.exports = function(){
     process.on('uncaughtException',(ex)=>{
         logger.log({
             level: 'info',
-            message: 'WE GOT AN UNCAUGHT EXCEPTION'
+            message: 'WE GOT AN UNCAUGHT EXCEPTION'+ ex.message
         });
         winston.error(ex.message,ex);
     });
@@ -36,7 +36,7 @@ module.exports = function(){
     process.on('unhandledRejection',(ex)=>{
         logger.log({
             level: 'info',
-            message: 'WE GOT AN unHANDLED EXCEPTION'
+            message: 'WE GOT AN unHANDLED EXCEPTION'+ex.message
         });
         winston.error(ex.message,ex);
     });
